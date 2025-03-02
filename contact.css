@@ -1,0 +1,359 @@
+/* styles.css */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: #faf7f3;
+  color: #333;
+}
+
+:root {
+  --blue: #2fafda;
+  --font_fml: 'Lalezar', sans-serif;
+}
+
+.head {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.head h1 {
+  color: var(--blue);
+  font-family: sans-serif;
+  font-size: 40px;
+}
+
+.menu ul {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+}
+
+.menu ul a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  position: relative;
+}
+
+.menu ul a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: black;
+  transition: width 0.2s ease;
+}
+
+.menu ul a:hover::after {
+  width: 100%;
+}
+
+.head .info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 22px;
+  position: relative;
+}
+
+.head .info .account {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.head .info .account i {
+  font-size: 30px;
+  color: grey;
+  cursor: pointer;
+}
+
+.head .info .account p {
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.head .info .account p:hover {
+  color: grey;
+}
+
+.head .info .hotline .top {
+  display: flex;
+}
+
+.head .info .hotline .top i {
+  font-size: 24px;
+}
+
+.head .info .hotline .top p {
+  font-size: 20px;
+  color: var(--blue);
+  font-weight: bold;
+}
+
+.head .info .modal-account {
+  position: absolute; 
+  top: 50px;
+  right: 130px;
+  background-color: white;
+  width: 130px;
+  height: 70px;
+  border: 1px solid black;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  display: none;
+}
+.head .info .modal-account hr{
+  margin: 0;
+  padding: 0;
+}
+
+.head .info .modal-account a {
+  text-decoration: none;
+  text-align: center;
+  font-size: 18px;
+}
+
+.contact-page {
+  text-align: center;
+  padding: 20px;
+  margin-top: 75px;
+}
+
+.title {
+  font-size: 36px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.contact-form,
+.contact-info {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.contact-form h2,
+.contact-info h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.contact-form form input,
+.contact-form form textarea {
+  width: 382px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  font-size: 14px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.contact-form form button {
+  width: 50%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.contact-form form button:hover {
+  background-color: #0056b3;
+}
+
+.contact-info {
+  background: none;
+  box-shadow: none;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.info_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: start;
+}
+
+.info_item {
+  display: flex;
+  gap: 10px;
+  align-items: start;
+  flex-direction: column;
+}
+
+.info_item span {
+  text-align: left;
+}
+
+.info_header {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+footer {
+  border-top: 1px solid black;
+  margin-top: 80px;
+  background: linear-gradient(150deg, #fff 70%, var(--blue));
+  padding: 20px;
+  color: #000;
+  font-family: sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.footer-logo h1 {
+  color: #29a3ef;
+}
+
+.footer-payment p {
+  font-weight: bold;
+}
+
+.payment-icons img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin: 5px 0;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #000;
+}
+
+.book-btn {
+  background: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.footer-contact p {
+  margin: 5px 0;
+}
+
+hr {
+  border: 0.5px solid #ddd;
+  margin: 20px 0;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.social-icons img {
+  width: 30px;
+  margin: 0 10px;
+}
+
+
+#chatbot {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 300px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: none;
+  flex-direction: column;
+}
+#chatbot-header {
+  background: #4CAF50;
+  color: white;
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#chatbot-body {
+  height: 400px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+#chatbot-input {
+  display: flex;
+  border-top: 1px solid #ccc;
+}
+#chat-input {
+  flex: 1;
+  border: none;
+  padding: 10px;
+}
+#send-message {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+}

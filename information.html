@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thông Tin Tài Khoản</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="information.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>THÔNG TIN TÀI KHOẢN</h1>
+      <div class="profile-container">
+        <!-- Chỉnh sửa hồ sơ -->
+        <div class="edit-profile">
+          <h2>CHỈNH SỬA HỒ SƠ</h2>
+          <div class="edit_container">
+            <div class="avatar">
+              <div class="avatar-image"></div>
+              <a class="text_blue" href="#">Thay đổi ảnh</a>
+            </div>
+            <form>
+              <div class="form-group">
+                <label for="ho">Họ và tên:</label>
+                <div class="user_name">
+                  <input class="input" type="text" id="ho" placeholder="Họ" />
+                  <input type="text" id="ten" placeholder="Tên" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="gioi-thieu">Giới thiệu:</label>
+                <textarea id="gioi-thieu" placeholder="Giới thiệu"></textarea>
+              </div>
+              <div class="form-group">
+                <label for="ten-nguoi-dung">Tên người dùng:</label>
+                <input
+                  type="text"
+                  id="ten-nguoi-dung"
+                  placeholder="Hãy chọn tên không trùng với người dùng khác"
+                />
+              </div>
+              <div class="form-group">
+                <label for="ngay-sinh">Ngày sinh:</label>
+                <input type="date" id="ngay-sinh" />
+              </div>
+              <div class="form-group">
+                <label for="gioi-tinh">Giới tính:</label>
+                <select id="gioi-tinh">
+                  <option value="" selected>Chọn giới tính</option>
+                  <option value="male">Nam</option>
+                  <option value="female">Nữ</option>
+                  <option value="other">Khác</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="quoc-gia">Quốc gia/Khu vực:</label>
+                <select id="quoc-gia">
+                  <option value="" selected>Chọn quốc gia/Khu vực</option>
+                  <option value="vn">Việt Nam</option>
+                  <option value="us">Hoa Kỳ</option>
+                  <option value="jp">Nhật Bản</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="ngon-ngu">Ngôn ngữ:</label>
+                <select id="ngon-ngu">
+                  <option value="" selected>Chọn ngôn ngữ</option>
+                  <option value="vi">Tiếng Việt</option>
+                  <option value="en">Tiếng Anh</option>
+                </select>
+              </div>
+              <button type="submit" class="btn">Save</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Quản lý tài khoản -->
+        <div class="account-management">
+          <h2>QUẢN LÝ TÀI KHOẢN</h2>
+          <form>
+            <div class="form-group">
+              <label for="email">Email (riêng tư):</label>
+              <input type="email" id="email" value="tranduy@gmail.com" />
+            </div>
+            <div class="form-group">
+              <label for="mat-khau">Mật khẩu:</label>
+              <div class="password_form">
+                <input type="password" id="mat-khau" value="" readonly />
+                <button type="button" class="btn_change">Thay đổi</button>
+              </div>
+            </div>
+            <div class="checkbox_form">
+              <div class="checkbox_item">
+                <input type="checkbox" id="nhan-thong-bao" />
+                <span>Tài khoản Nhà cung cấp</span>
+              </div>
+              <div class="checkbox_item">
+                <input type="checkbox" id="nhan-thong-bao" />
+                <span>Tài khoản cá nhân</span>
+              </div>
+              <div class="checkbox_item">
+                <input type="checkbox" id="nhan-thong-bao" />
+                <span>Tài khoản Quản trị viên</span>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Xóa tài khoản -->
+      <div class="delete-account">
+        <h2>XÓA TÀI KHOẢN</h2>
+        <div class="btn_wrap">
+          <div class="btn_text">
+            <span class="font_bold">Hủy kích hoạt tài khoản</span>
+            <span>Tạm thời ẩn hồ sơ của bạn</span>
+          </div>
+          <button type="button" class="btn grey">Hủy kích hoạt</button>
+        </div>
+        <div class="btn_wrap">
+          <div class="btn_text">
+            <span class="font_bold">Xóa dữ liệu và tài khoản của bạn</span>
+            <span>Xóa vĩnh viễn dữ liệu và tài khoản</span>
+          </div>
+          <button type="button" class="btn grey">Xóa tài khoản</button>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-logo">
+          <h1>TripTrek</h1>
+        </div>
+        <div class="footer-payment">
+          <p>Chấp nhận phương thức thanh toán</p>
+          <div class="payment-icons">
+            <img src="./Home/visa.png" alt="Visa" />
+            <img src="./Home/mastercard.png" alt="MasterCard" />
+            <img src="./Home/jcb.png" alt="JCB" />
+            <img src="./Home/amex.png" alt="Amex" />
+            <img src="./Home/paypal.png" alt="PayPal" />
+          </div>
+        </div>
+        <div class="footer-links">
+          <ul>
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Địa điểm du lịch</a></li>
+            <li><a href="#">Tin tức</a></li>
+            <li><a href="#">Chính sách quyền riêng tư</a></li>
+            <li><button class="book-btn">Đặt tour</button></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <p>support@triptrek.com</p>
+          <p>ĐT: 012 345 6789</p>
+          <p>120 Hoàng Minh Thảo,<br />Q. Liên Chiểu, TP. Đà Nẵng</p>
+        </div>
+      </div>
+      <hr />
+      <div class="footer-bottom">
+        <p>© 2024 bản quyền bởi TripTrek.</p>
+        <div class="social-icons">
+          <a href="#"><img src="./Home/facebook.png" alt="Facebook" /></a>
+          <a href="#"><img src="./Home/instagram.png" alt="Instagram" /></a>
+          <a href="#"><img src="./Home/twitter.png" alt="Twitter" /></a>
+          <a href="#"><img src="./Home/linkedin.png" alt="LinkedIn" /></a>
+          <a href="#"><img src="./Home/youtube.png" alt="YouTube" /></a>
+          <a href="#"><img src="./Home/tiktok.png" alt="TikTok" /></a>
+        </div>
+      </div>
+    </footer>
+    <script src="./Home/home.js"></script>
+  </body>
+</html>

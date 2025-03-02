@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Du Lịch</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="tourism.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="head">
+      <h1>TripTrek</h1>
+      <div class="menu">
+        <ul>
+          <a href="./Home/home.html">
+            <li>Trang chủ</li>
+          </a>
+          <a href="intro.html">
+            <li>Giới thiệu</li>
+          </a>
+          <a href="tourism.html">
+            <li>Du lịch</li>
+          </a>
+          <a href="./tourist.html">
+            <li>Cẩm nang du lịch</li>
+          </a>
+          <a href="contact.html">
+            <li>Liên hệ</li>
+          </a>
+        </ul>
+      </div>
+      <div class="info">
+        <div class="account">
+          <i id="modal_acc" class="fa fa-user-circle" aria-hidden="true"></i>
+          <p id="modal_acc">Tài khoản</p>
+        </div>
+        <div id="show_modal_acc" class="modal-account">
+          <a href="" style="color: black; margin-bottom: 5px"> Setting </a>
+          <hr />
+          <a
+            href="./SigninandSignUp/Signin.html"
+            style="color: red; margin-top: 5px"
+          >
+            Logout
+          </a>
+        </div>
+        <div class="hotline">
+          <div class="top">
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            <p>1900.6750</p>
+          </div>
+          <p style="font-size: 13px">07:00 - 21:00</p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="tourism_title">DU LỊCH</div>
+      <div class="wrapped">
+        <div class="option_container">
+          <div class="option_item">
+            <span class="option_title">Điểm đi:</span>
+            <select name="" id="" class="item_select">
+              <option value="">Chọn điểm đi</option>
+              <option value="hanoi">Hà Nội</option>
+              <option value="hochiminh">Hồ Chí Minh</option>
+              <option value="danang">Đà Nẵng</option>
+            </select>
+          </div>
+          <div class="option_item">
+            <span class="option_title">Điểm đến:</span>
+            <select name="" id="" class="item_select">
+              <option value="">Chọn điểm đến</option>
+              <option value="hanoi">Hà Nội</option>
+              <option value="hochiminh">Hồ Chí Minh</option>
+              <option value="danang">Đà Nẵng</option>
+            </select>
+          </div>
+          <div class="option_item">
+            <span class="option_title">Số sao:</span>
+            <select name="" id="" class="item_select">
+              <option value="">1</option>
+              <option value="">2</option>
+              <option value="">3</option>
+            </select>
+          </div>
+          <div class="option_item">
+            <span class="option_title">Mức giá:</span>
+            <div class="option_item_check">
+              <input type="checkbox" name="" id="" />
+              <label for="">Dưới 2 triệu</label>
+            </div>
+            <div class="option_item_check">
+              <input type="checkbox" name="" id="" />
+              <label for="">2 - 4 triệu</label>
+            </div>
+            <div class="option_item_check">
+              <input type="checkbox" name="" id="" />
+              <label for="">4 - 6 triệu</label>
+            </div>
+            <div class="option_item_check">
+              <input type="checkbox" name="" id="" />
+              <label for="">Trên 6 triệu</label>
+            </div>
+          </div>
+        </div>
+        <div class="booking_container">
+          <div class="booking_heading">
+            <span>TẤT CẢ</span>
+            <select class="booking_select">
+              <option value="">Thứ tự</option>
+              <option value="">Từ A -> Z</option>
+              <option value="">Từ Z -> A</option>
+            </select>
+          </div>
+          <div class="booking_col">
+            <div class="booking_row">
+              <div class="booking_item">
+                <img
+                  src="https://th.bing.com/th/id/OIP.slW6YCnF4c-jcmy4IwHKgAHaE7?w=258&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                  alt=""
+                  class="booking_img"
+                />
+                <span class="booking_title">DANANG</span>
+                <ul class="booking_rating">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                </ul>
+                <div>
+                  <span>Giá tour:</span>
+                  <span class="booking_price">2,500,000 VND/người</span>
+                </div>
+                <button class="booking_btn">Đặt ngay</button>
+              </div>
+              <div class="booking_item">
+                <img
+                  src="https://th.bing.com/th/id/OIP.j1gpMXj_BssWiJX4uz1OOAHaE7?rs=1&pid=ImgDetMain"
+                  alt=""
+                  class="booking_img"
+                />
+                <span class="booking_title">HOCHIMINH</span>
+                <ul class="booking_rating">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                </ul>
+                <div>
+                  <span>Giá tour:</span>
+                  <span class="booking_price">2,500,000 VND/người</span>
+                </div>
+                <button class="booking_btn">Đặt ngay</button>
+              </div>
+              <div class="booking_item">
+                <img
+                  src="https://th.bing.com/th/id/OIP.n9mfEkzmKkNQqX9y6ph3eAHaE8?w=308&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                  alt=""
+                  class="booking_img"
+                />
+                <span class="booking_title">HANOI</span>
+                <ul class="booking_rating">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                </ul>
+                <div>
+                  <span>Giá tour:</span>
+                  <span class="booking_price">2,500,000 VND/người</span>
+                </div>
+                <button class="booking_btn">Đặt ngay</button>
+              </div>
+            </div>
+            <div class="booking_row">
+              <div class="booking_item">
+                <img
+                  src="https://th.bing.com/th/id/OIP.slW6YCnF4c-jcmy4IwHKgAHaE7?w=258&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                  alt=""
+                  class="booking_img"
+                />
+                <span class="booking_title">DANANG</span>
+                <ul class="booking_rating">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                </ul>
+                <div>
+                  <span>Giá tour:</span>
+                  <span class="booking_price">2,500,000 VND/người</span>
+                </div>
+                <button class="booking_btn">Đặt ngay</button>
+              </div>
+              <div class="booking_item">
+                <img
+                  src="https://th.bing.com/th/id/OIP.j1gpMXj_BssWiJX4uz1OOAHaE7?rs=1&pid=ImgDetMain"
+                  alt=""
+                  class="booking_img"
+                />
+                <span class="booking_title">HOCHIMINH</span>
+                <ul class="booking_rating">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                </ul>
+                <div>
+                  <span>Giá tour:</span>
+                  <span class="booking_price">2,500,000 VND/người</span>
+                </div>
+                <button class="booking_btn">Đặt ngay</button>
+              </div>
+              <div class="booking_item">
+                <img
+                  src="https://th.bing.com/th/id/OIP.n9mfEkzmKkNQqX9y6ph3eAHaE8?w=308&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                  alt=""
+                  class="booking_img"
+                />
+                <span class="booking_title">HANOI</span>
+                <ul class="booking_rating">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                </ul>
+                <div>
+                  <span>Giá tour:</span>
+                  <span class="booking_price">2,500,000 VND/người</span>
+                </div>
+                <button class="booking_btn">Đặt ngay</button>
+              </div>
+            </div>
+            <div class="booking_row">
+              <div class="booking_item">
+                <img
+                  src="https://th.bing.com/th/id/OIP.slW6YCnF4c-jcmy4IwHKgAHaE7?w=258&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                  alt=""
+                  class="booking_img"
+                />
+                <span class="booking_title">DANANG</span>
+                <ul class="booking_rating">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                </ul>
+                <div>
+                  <span>Giá tour:</span>
+                  <span class="booking_price">2,500,000 VND/người</span>
+                </div>
+                <button class="booking_btn">Đặt ngay</button>
+              </div>
+              <div class="booking_item">
+                <img
+                  src="https://th.bing.com/th/id/OIP.j1gpMXj_BssWiJX4uz1OOAHaE7?rs=1&pid=ImgDetMain"
+                  alt=""
+                  class="booking_img"
+                />
+                <span class="booking_title">HOCHIMINH</span>
+                <ul class="booking_rating">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                </ul>
+                <div>
+                  <span>Giá tour:</span>
+                  <span class="booking_price">2,500,000 VND/người</span>
+                </div>
+                <button class="booking_btn">Đặt ngay</button>
+              </div>
+              <div class="booking_item">
+                <img
+                  src="https://th.bing.com/th/id/OIP.n9mfEkzmKkNQqX9y6ph3eAHaE8?w=308&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                  alt=""
+                  class="booking_img"
+                />
+                <span class="booking_title">HANOI</span>
+                <ul class="booking_rating">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                </ul>
+                <div>
+                  <span>Giá tour:</span>
+                  <span class="booking_price">2,500,000 VND/người</span>
+                </div>
+                <button class="booking_btn">Đặt ngay</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-logo">
+          <h1>TripTrek</h1>
+        </div>
+        <div class="footer-payment">
+          <p>Chấp nhận phương thức thanh toán</p>
+          <div class="payment-icons">
+            <img src="./Home/visa.png" alt="Visa" />
+            <img src="./Home/mastercard.png" alt="MasterCard" />
+            <img src="./Home/jcb.png" alt="JCB" />
+            <img src="./Home/amex.png" alt="Amex" />
+            <img src="./Home/paypal.png" alt="PayPal" />
+          </div>
+        </div>
+        <div class="footer-links">
+          <ul>
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Địa điểm du lịch</a></li>
+            <li><a href="#">Tin tức</a></li>
+            <li><a href="#">Chính sách quyền riêng tư</a></li>
+            <li><button class="book-btn">Đặt tour</button></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <p>support@triptrek.com</p>
+          <p>ĐT: 012 345 6789</p>
+          <p>120 Hoàng Minh Thảo,<br />Q. Liên Chiểu, TP. Đà Nẵng</p>
+        </div>
+      </div>
+      <hr />
+      <div class="footer-bottom">
+        <p>© 2024 bản quyền bởi TripTrek.</p>
+        <div class="social-icons">
+          <a href="#"><img src="./Home/facebook.png" alt="Facebook" /></a>
+          <a href="#"><img src="./Home/instagram.png" alt="Instagram" /></a>
+          <a href="#"><img src="./Home/twitter.png" alt="Twitter" /></a>
+          <a href="#"><img src="./Home/linkedin.png" alt="LinkedIn" /></a>
+          <a href="#"><img src="./Home/youtube.png" alt="YouTube" /></a>
+          <a href="#"><img src="./Home/tiktok.png" alt="TikTok" /></a>
+        </div>
+      </div>
+    </footer>
+    <script src="./Home/home.js"></script>
+    <script src="https://app.tudongchat.com/js/chatbox.js"></script>
+    <script>
+        const tudong_chatbox = new TuDongChat('Gmcy69TbPltvDjsOV7zcH')
+        tudong_chatbox.initial()
+    </script>
+  </body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Liên Hệ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="contact.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="head">
+      <h1>TripTrek</h1>
+      <div class="menu">
+          <ul>
+              <a href="./Home/home.html">
+                  <li>Trang chủ</li>
+              </a>
+              <a href="intro.html">
+                  <li>Giới thiệu</li>
+              </a>
+              <a href="tourism.html">
+                  <li>Du lịch</li>
+              </a>
+              <a href="./tourist.html">
+                  <li>Cẩm nang du lịch</li>
+              </a>
+              <a href="contact.html">
+                  <li>Liên hệ</li>
+              </a>
+          </ul>
+      </div>
+      <div class="info">
+          <div class="account">
+              <i class="fa fa-user-circle" aria-hidden="true"></i>
+              <p id="modal_acc">Tài khoản</p>
+          </div>
+          <div id="show_modal_acc" class="modal-account">
+              <a href="" style="color: black;padding-bottom: 10px;">
+                  Setting
+              </a>
+              <hr>
+              <a href="./SigninandSignUp/Signin.html" style="color: red; padding-top: 10px; ">
+                  Logout
+              </a>
+          </div>
+          <div class="hotline">
+              <div class="top">
+                  <i class="fa fa-phone" aria-hidden="true"></i>
+                  <p>1900.6750</p>
+              </div>
+              <p style="font-size: 13px;">
+                  07:00 - 21:00
+              </p>
+          </div>
+      </div>
+  </div>
+    <div class="contact-page">
+      <h1 class="title">LIÊN HỆ</h1>
+      <div class="contact-container">
+        <div class="contact-form">
+          <h2>Liên hệ với chúng tôi</h2>
+          <form>
+            <input type="text" placeholder="Họ và tên" required />
+            <input type="email" placeholder="Email" required />
+            <input type="text" placeholder="Điện thoại" required />
+            <textarea placeholder="Nội dung" rows="4" required></textarea>
+            <button type="submit">Gửi Thông Tin</button>
+          </form>
+        </div>
+
+        <div class="contact-info">
+          <h2>Công ty cổ phần dịch vụ TripViet</h2>
+          <div class="info_wrapper">
+            <div class="info_item">
+              <div class="info_header">
+                <i class="bx bxs-map"></i>
+                <strong>Địa chỉ:</strong>
+              </div>
+              <span
+                >P. 402, Tòa G, Đại học Duy Tân, 120 Hoàng Minh Thảo, Quận Liên
+                Chiểu, TP. Đà Nẵng</span
+              >
+            </div>
+            <div class="info_item">
+              <div class="info_header">
+                <i class="bx bxs-envelope"></i>
+                <strong>Email:</strong>
+              </div>
+              <span>support@triptrek.com</span>
+            </div>
+            <div class="info_item">
+              <div class="info_header">
+                <i class="bx bxs-map"></i>
+                <strong>Hotline:</strong>
+              </div>
+              <span>0123.456.789</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="map">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.8354345094995!2d144.9537353159198!3d-37.81627974201361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf5771d33f6c6822d!2sGoogle!5e0!3m2!1sen!2sus!4v1617920058858!5m2!1sen!2sus" 
+            width="1000" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
+        </iframe>
+    </div>
+    
+    </div>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-logo">
+          <h1>TripTrek</h1>
+        </div>
+        <div class="footer-payment">
+          <p>Chấp nhận phương thức thanh toán</p>
+          <div class="payment-icons">
+            <img src="./Home/visa.png" alt="Visa" />
+            <img src="./Home/mastercard.png" alt="MasterCard" />
+            <img src="./Home/jcb.png" alt="JCB" />
+            <img src="./Home/amex.png" alt="Amex" />
+            <img src="./Home/paypal.png" alt="PayPal" />
+          </div>
+        </div>
+        <div class="footer-links">
+          <ul>
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Địa điểm du lịch</a></li>
+            <li><a href="#">Tin tức</a></li>
+            <li><a href="#">Chính sách quyền riêng tư</a></li>
+            <li><button class="book-btn">Đặt tour</button></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <p>support@triptrek.com</p>
+          <p>ĐT: 012 345 6789</p>
+          <p>120 Hoàng Minh Thảo,<br />Q. Liên Chiểu, TP. Đà Nẵng</p>
+        </div>
+      </div>
+      <hr />
+      <div class="footer-bottom">
+        <p>© 2024 bản quyền bởi TripTrek.</p>
+        <div class="social-icons">
+          <a href="#"><img src="./Home/facebook.png" alt="Facebook" /></a>
+          <a href="#"><img src="./Home/instagram.png" alt="Instagram" /></a>
+          <a href="#"><img src="./Home/twitter.png" alt="Twitter" /></a>
+          <a href="#"><img src="./Home/linkedin.png" alt="LinkedIn" /></a>
+          <a href="#"><img src="./Home/youtube.png" alt="YouTube" /></a>
+          <a href="#"><img src="./Home/tiktok.png" alt="TikTok" /></a>
+        </div>
+      </div>
+    </footer>
+    <script src="./Home/home.js"></script>
+    <script>
+      const tudong_chatbox = new TuDongChat('Gmcy69TbPltvDjsOV7zcH')
+      tudong_chatbox.initial()
+    </script>
+  </body>
+</html>

@@ -1,0 +1,365 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --blue: #2fafda;
+  --font_fml: 'Lalezar', sans-serif;
+}
+
+body{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+}
+
+.head {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.head h1 {
+  color: var(--blue);
+  font-family: sans-serif;
+  font-size: 40px;
+}
+
+.menu ul {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+}
+
+.menu ul a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  position: relative;
+}
+
+.menu ul a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: black;
+  transition: width 0.2s ease;
+}
+
+.menu ul a:hover::after {
+  width: 100%;
+}
+
+.head .info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 22px;
+  position: relative;
+}
+
+.head .info .account {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.head .info .account i {
+  font-size: 30px;
+  color: grey;
+  cursor: pointer;
+}
+
+.head .info .account p {
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.head .info .account p:hover {
+  color: grey;
+}
+
+.head .info .hotline .top {
+  display: flex;
+}
+
+.head .info .hotline .top i {
+  font-size: 24px;
+}
+
+.head .info .hotline .top p {
+  font-size: 20px;
+  color: var(--blue);
+  font-weight: bold;
+}
+
+.head .info .modal-account {
+  position: absolute; 
+  top: 50px;
+  right: 130px;
+  background-color: white;
+  width: 130px;
+  height: 70px;
+  border: 1px solid black;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  display: none;
+}
+.head .info .modal-account hr{
+  margin: 0;
+  padding: 0;
+}
+
+.head .info .modal-account a {
+  text-decoration: none;
+  text-align: center;
+  font-size: 18px;
+}
+
+
+.container {
+  margin-top: 27rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  gap: 20px;
+  background-color: rgb(242, 237, 237);
+  height: 100%;
+}
+
+.tourism_title {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.wrapped {
+  gap: 50px;
+  width: 100%;
+  display: flex;
+  padding: 0 50px;
+}
+
+.item_select {
+  width: 140px;
+  outline: none;
+  border-radius: 10px;
+  padding: 2px 10px;
+  width: 220px;
+}
+
+.option_container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 1px solid black;
+  height: fit-content;
+  padding: 50px 10px 50px 10px;
+  align-items: start;
+  border-radius: 20px;
+  gap: 20px;
+  background-color: white;
+}
+
+.option_item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.option_title {
+  font-weight: bold;
+  padding-left: 5px;
+}
+.option_item_check {
+  font-size: 15px;
+}
+
+.booking_container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: fit-content;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.booking_heading {
+  display: flex;
+  gap: 700px;
+  margin-bottom: 20px;
+}
+.booking_heading span {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.booking_select {
+  width: 140px;
+  border-radius: 10px;
+  padding: 2px 10px;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.booking_col {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.booking_row {
+    display: flex;
+    gap: 20px;
+}
+
+.booking_item {
+    height: 360px;
+    width: 310px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    border-radius: 10px;
+    box-shadow: inset;
+    /* border: 1px solid black; */
+    /* padding: 5px; */
+    align-items: center;
+    /* position: relative; */
+    background-color: white;
+    padding-bottom: 20px;
+    overflow: hidden;
+}
+
+.booking_img {
+    /* position: absolute; */
+    top: 0;
+    /* border-radius: 10px; */
+    height: 200px;
+    width: 310px;
+    object-fit: cover;
+}
+
+.booking_title {
+    font-weight: bold;
+}
+
+.booking_rating {
+    z-index: 2;
+}
+
+.bx.bxs-star {
+    color: rgb(243, 243, 113);
+    /* z-index: 2; */
+}
+
+.booking_price {
+    color: rgb(240, 51, 51);
+}
+
+.booking_btn {
+    background-color: rgb(114, 114, 236);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+    width: 200px;
+    height: 30px;
+}
+
+/* footer */
+footer {
+  border-top: 1px solid black;
+  margin-top: 27rem;
+  background: linear-gradient(150deg, #fff 70%, var(--blue));
+  padding: 20px;
+  color: #000;
+  font-family: sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.footer-logo h1 {
+  color: #29a3ef;
+}
+
+.footer-payment p {
+  font-weight: bold;
+}
+
+.payment-icons img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin: 5px 0;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #000;
+}
+
+.book-btn {
+  background: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.footer-contact p {
+  margin: 5px 0;
+}
+
+hr {
+  border: 0.5px solid #ddd;
+  margin: 20px 0;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.social-icons img {
+  width: 30px;
+  margin: 0 10px;
+}

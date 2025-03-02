@@ -1,0 +1,814 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --blue: #2fafda;
+    --font_fml: 'Lalezar', sans-serif;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+.head {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.head h1 {
+    color: var(--blue);
+    font-family: sans-serif;
+    font-size: 40px;
+}
+
+.menu ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+
+.menu ul a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    position: relative;
+}
+
+.menu ul a::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 0.2s ease;
+}
+
+.menu ul a:hover::after {
+    width: 100%;
+}
+
+.head .info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+    position: relative;
+}
+
+.head .info .account {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.head .info .account i {
+    font-size: 30px;
+    color: grey;
+    cursor: pointer;
+}
+
+.head .info .account p {
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.head .info .account p:hover {
+    color: grey;
+}
+
+.head .info .hotline .top {
+    display: flex;
+}
+
+.head .info .hotline .top i {
+    font-size: 24px;
+}
+
+.head .info .hotline .top p {
+    font-size: 20px;
+    color: var(--blue);
+    font-weight: bold;
+}
+
+.head .info .modal-account {
+    position: absolute; 
+    top: 50px;
+    right: 130px;
+    background-color: white;
+    width: 130px;
+    height: 70px;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    display: none;
+}
+.head .info .modal-account hr{
+    margin: 0;
+    padding: 0;
+}
+
+.head .info .modal-account a {
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+}
+
+.p-1 {
+    width: 100%;
+    height: 100vh;
+    margin-top: 80px;
+    background: url('p-1.png');
+    background-size: cover;
+    position: relative;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.p-1 h1 {
+    font-size: 50px;
+}
+
+.p-1 h5 {
+    padding: 10px 0 30px;
+    text-align: center;
+}
+
+.p-1 .search {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    height: 100px;
+    padding: 0 30px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    color: black;
+    gap: 20px;
+}
+
+.p-1 .search .input_search {
+    padding: 18px 30px;
+    border: 1px solid rgb(153, 153, 153);
+    display: flex;
+    gap: 15px;
+    border-radius: 10px;
+}
+
+.p-1 .search .input_search input {
+    border: none;
+
+}
+
+.p-1 .search .input_search i {
+    cursor: pointer;
+    color: grey;
+}
+
+.p-1 .search .input_search input:focus {
+    outline: none;
+}
+
+.p-1 .search .local_option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px 20px;
+    border: 1px solid rgb(153, 153, 153);
+    border-radius: 10px;
+}
+
+.p-1 .search .local_option .departure_point {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.p-1 .search .local_option .departure_point i,
+.p-1 .search .local_option .destination i,
+.p-1 .search .start_option i {
+    font-size: 25px;
+    color: var(--blue);
+}
+
+.p-1 .search .local_option .destination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.p-1 .search .start_option {
+    padding: 7px 20px;
+    border: 1px solid rgb(153, 153, 153);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.arrow-container {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.line {
+    width: 170px;
+    height: 2px;
+    background-color: black;
+}
+
+.arrow-right {
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 10px solid black;
+}
+
+.search button {
+    font-size: 13px;
+    padding: 8px 28px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background-color: var(--blue);
+    cursor: pointer;
+}
+
+.search button:hover {
+    background-color: rgb(1, 62, 153);
+}
+
+.search select {
+    border: none;
+    cursor: pointer;
+}
+
+.search select:focus {
+    outline: none;
+}
+
+/* p-2 */
+.p-2 {
+    padding-top: 50px;
+    /* border: 1px solid black; */
+}
+
+.p-2 .introduce {
+    margin-bottom: 130px;
+}
+
+.introduce .left {
+    line-height: 25px;
+}
+
+.introduce .left span {
+    color: var(--blue);
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.introduce .left h3 {
+    font-size: 32px;
+    padding: 5px 0 15px;
+}
+
+.introduce .left p {
+    font-size: 16px;
+    font-style: italic;
+    padding: 0 0 20px;
+}
+
+.introduce .left ul {
+    list-style: none;
+}
+
+.introduce .left ul li {
+    display: flex;
+    gap: 20px;
+}
+
+.introduce .left ul li span {
+    font-size: 30px;
+}
+
+.introduce .right {
+    position: relative;
+}
+
+.introduce .right img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    border: 3px solid white;
+    position: absolute;
+}
+
+.introduce .right img:nth-child(1) {
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 1;
+}
+
+.introduce .right img:nth-child(2) {
+    top: 130px;
+    left: 120px;
+    transform: rotate(-25deg);
+    z-index: 2;
+}
+
+.introduce .right img:nth-child(3) {
+    top: 160px;
+    right: 110px;
+    transform: rotate(10deg);
+    z-index: 3;
+}
+
+.option .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.option .row .col.l-3 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #2694FE;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    aspect-ratio: 2;
+    /*tỉ lệ*/
+}
+
+.option .row .col.l-3 img {
+    position: absolute;
+    top: -2rem;
+}
+
+.option .row .col.l-3 .content {
+    padding: 20px 0 5px;
+    width: 90%;
+}
+
+.sale {
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sale h2 {
+    font-size: 35px;
+    color: var(--blue);
+    padding-bottom: 7px;
+}
+
+.sale span {
+    font-size: 15px;
+    color: #9E9E9E;
+}
+
+.sale .grid.wide .row {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sale .grid.wide .row img {
+    width: 340px;
+    height: 209px;
+    border-radius: 15px;
+}
+
+.love_trip {
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.love_trip h2 {
+    font-size: 35px;
+    color: var(--blue);
+    padding-bottom: 7px;
+}
+
+.love_trip span {
+    font-size: 15px;
+    color: #9E9E9E;
+}
+
+.love_trip .row {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.love_trip .l-3.m-6.c-6 {
+    flex: 0 0 23%;
+    position: relative;
+    overflow: hidden;
+}
+
+.love_trip .image-container {
+    position: relative;
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.love_trip .image-container img {
+    cursor: pointer;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    /* Cắt ảnh sao cho vừa khung */
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.love_trip .image-container:hover img {
+    transform: scale(1.1);
+    /* Phóng to ảnh khi hover */
+}
+
+.love_trip .text-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    opacity: 0;
+    /* Ẩn phần chữ */
+    transform: translateY(100%);
+    /* Đẩy phần chữ xuống ngoài khung ảnh */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    /* Hiệu ứng chuyển động */
+}
+
+.love_trip .image-container:hover .text-overlay {
+    opacity: 1;
+    /* Hiển thị phần chữ */
+    transform: translateY(0);
+    /* Đưa chữ về vị trí ban đầu */
+}
+
+.love_trip .text-overlay .name_local {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.love_trip .text-overlay .reviews {
+    font-size: 14px;
+}
+
+/* p-3 */
+.p-3 {
+    margin-top: 60px;
+    width: 100%;
+    height: 430px;
+    background: url('lt1.png');
+    background-size: cover;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.p-3 .explore {
+    position: relative;
+    width: 90%;
+    height: 80%;
+    border: 2px solid white;
+}
+
+.p-3 .explore h1 {
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    font-size: 40px;
+}
+
+.p-3 .explore hr {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.p-3 .explore span {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    font-size: 14px;
+}
+
+.p-3 .explore .btn {
+    position: absolute;
+    right: 150px;
+    top: 200px;
+}
+
+.p-3 .explore .btn button {
+    font-size: 15px;
+    font-weight: bold;
+    width: 97px;
+    height: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.p-3 .explore .btn .btn-1 {
+    background-color: white;
+    border: none;
+    width: 130px;
+    height: 40px;
+}
+
+.p-3 .explore .btn .btn-2 {
+    background-color: #D4FFD1;
+    border: none;
+    width: 130px;
+    height: 40px;
+}
+
+/* p-4 */
+.p-4 .news {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.p-4 .news h2 {
+    font-size: 40px;
+    color: var(--blue);
+    padding-bottom: 7px;
+}
+
+.p-4 .news span {
+    font-size: 15px;
+    color: #9E9E9E;
+}
+
+.p-4 .news .row .admin {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.p-4 .news .admin .left {
+    display: flex;
+    gap: 10px;
+    font-size: 13px;
+    color: gray;
+}
+
+.p-4 .news .admin .time {
+    color: gray;
+    font-size: 13px;
+}
+
+.p-4 .news .grid.wide .row {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.p-4 .news .grid.wide .row .col {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.p-4 .news .grid.wide .row .col img {
+    width: 305px;
+    height: 209px;
+    border-radius: 8px;
+}
+
+.p-4 .news .grid.wide .row .col h3 {
+    font-size: 18px;
+}
+
+/* p-5 */
+.p-5 {
+    margin-top: 50px;
+}
+
+.p-5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.p-5 img {
+    width: 150px;
+    height: 150px;
+}
+
+.p-5 h2 {
+    text-align: center;
+}
+
+.p-5 h2 hr {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.p-5 .input-email {
+    display: flex;
+    gap: 20px;
+    /* Khoảng cách giữa các phần tử con */
+    align-items: center;
+    /* Căn giữa theo chiều dọc */
+}
+
+.p-5 .input-email .email {
+    display: flex;
+    flex-direction: column;
+}
+
+.p-5 .input-email .email input {
+    width: 27rem;
+    height: 30px;
+}
+
+.p-5 .input-email button {
+    margin-top: 20px;
+    padding: 0 25px;
+    background-color: black;
+    color: white;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+/* footer */
+footer {
+    border-top: 1px solid black;
+    margin-top: 80px;
+    background: linear-gradient(150deg, #fff 70%, var(--blue));
+    padding: 20px;
+    color: #000;
+    font-family: sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.footer-logo h1 {
+    color: #29a3ef;
+}
+
+.footer-payment p {
+    font-weight: bold;
+}
+
+.payment-icons img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin: 5px 0;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #000;
+}
+
+.book-btn {
+    background: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.footer-contact p {
+    margin: 5px 0;
+}
+
+hr {
+    border: 0.5px solid #ddd;
+    margin: 20px 0;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.social-icons img {
+    width: 30px;
+    margin: 0 10px;
+}
+
+#chatbot {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: none;
+    flex-direction: column;
+}
+#chatbot-header {
+    background: #4CAF50;
+    color: white;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#chatbot-body {
+    height: 400px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+#chatbot-input {
+    display: flex;
+    border-top: 1px solid #ccc;
+}
+#chat-input {
+    flex: 1;
+    border: none;
+    padding: 10px;
+}
+#send-message {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}

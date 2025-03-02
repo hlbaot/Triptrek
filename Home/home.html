@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap" rel="stylesheet">
+    <!-- Đường dẫn file CSS -->
+    <link rel="stylesheet" href="./libraryGrid.css">
+    <link rel="stylesheet" href="./home.css">
+    <title>Home</title>
+</head>
+<body>
+    <div class="head">
+        <h1>TripTrek</h1>
+        <div class="menu">
+            <ul>
+                <a href="./home.html">
+                    <li>Trang chủ</li>
+                </a>
+                <a href="../intro.html">
+                    <li>Giới thiệu</li>
+                </a>
+                <a href="../tourism.html">
+                    <li>Du lịch</li>
+                </a>
+                <a href="../tourist.html">
+                    <li>Cẩm nang du lịch</li>
+                </a>
+                <a href="../contact.html">
+                    <li>Liên hệ</li>
+                </a>
+            </ul>
+        </div>
+        <div class="info">
+            <div class="account">
+                <i id="modal_acc" class="fa fa-user-circle" aria-hidden="true"></i>
+                <p id="modal_acc">Tài khoản</p>
+            </div>
+            <div id="show_modal_acc" class="modal-account">
+                <a href="" style="color: black;padding-bottom: 10px;">
+                    Setting
+                </a>
+                <hr>
+                <a href="../SigninandSignUp/Signin.html" style="color: red; padding-top: 10px; ">
+                    Logout
+                </a>
+            </div>
+            <div class="hotline">
+                <div class="top">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <p>1900.6750</p>
+                </div>
+                <p style="font-size: 13px;">
+                    07:00 - 21:00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="p-1">
+        <h1>Du lịch dễ dàng khắp mọi nơi cùng Triptrek</h1>
+        <h5>Với nguồn lực dồi dào, kinh nghiệm và uy tín trong lĩnh vực du lịch, mối quan hệ bền vững với các đối tác
+            khắp nơi trên Việt Nam. <br> Triptrek luôn nỗ lực mang đến cho khách hàng những dịch vụ du lịch giá trị nhất
+        </h5>
+        <div class="search">
+            <div class="input_search">
+                <input type="text" placeholder="Từ khóa (Hà Nội, HCM,...)">
+                <i class="fas fa-camera"></i>
+                <i class="fa fa-microphone" aria-hidden="true"></i>
+            </div>
+            <div class="local_option">
+                <div class="departure_point">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div class="select">
+                        <p>Điểm đi</p>
+                        <select class="form-control" name="" id="">
+                            <option>Chọn điểm đi</option>
+                            <option>Hà Nội</option>
+                            <option>Đà Nẵng</option>
+                            <option>Hồ Chí Minh</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="arrow-container">
+                    <div class="line"></div>
+                    <div class="arrow-right"></div>
+                </div>
+                <div class="destination">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div class="select">
+                        <p>Điểm đến</p>
+                        <select class="form-control" name="" id="">
+                            <option>Chọn điểm đến</option>
+                            <option>Hà Nội</option>
+                            <option>Đà Nẵng</option>
+                            <option>Hồ Chí Minh</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="start_option">
+                <i class="fa-solid fa-location-dot"></i>
+                <div class="select">
+                    <p>Mức đánh giá</p>
+                    <select class="form-control" name="" id="">
+                        <option>Chọn số sao</option>
+                        <option>⭐</option>
+                        <option>⭐⭐</option>
+                        <option>⭐⭐⭐</option>
+                        <option>⭐⭐⭐⭐</option>
+                        <option>⭐⭐⭐⭐⭐</option>
+                    </select>
+                </div>
+            </div>
+            <button>Tìm kiếm</button>
+        </div>
+    </div>
+    <div class="p-2">
+        <div class="introduce">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="left col l-6 m-6 c-12">
+                        <span>Về chúng tôi</span>
+                        <h3>Công ty cổ phần TripTrek</h3>
+                        <p>Chúng tôi luôn luôn lắng nghe và chia sẻ mong muốn của từng Quý khách hàng, mang lại cho Quý
+                            khách sự hài lòng về dịch vụ cũng như thái độ phục vụ của từng nhân viên trong chuyến đi,
+                            sao cho mỗi dịch vụ đơn lẻ là một mắt xích kết nối hoàn hảo giá trị chuyến đi của Quý khách.
+                            Mỗi tình cảm, hạnh phúc hay mức độ hài lòng của Quý khách là một viên gạch xây dựng lên
+                            thành công và giá trị của Công ty</p>
+                        <ul>
+                            <li>
+                                <span>27</span>
+                                <p>Năm hình thành và phát triển</p>
+                            </li>
+                            <li>
+                                <span>06</span>
+                                <p>Văn phòng</p>
+                            </li>
+                            <li>
+                                <span>43</span>
+                                <p>Trung tâm, chính nhánh, và văn phòng giao dịch</p>
+                            </li>
+                            <li>
+                                <span>15</span>
+                                <p>Công ty thành viên</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="right col l-6 m-6 c-12">
+                        <img src="p21.jpg" alt="">
+                        <img src="p22.jpg" alt="">
+                        <img src="p23.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="option">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-3 m-6 c-6">
+                        <img src="opt1.png" alt="">
+                        <div class="content">
+                            <h4>Các Thông Tin Tour Mới Nhất</h4>
+                            <p>Luôn cập nhật các thông tin mới nhất, đầy đủ nhất về các tour tốt nhất hiện nay</p>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-6 c-6">
+                        <img src="opt2.png" alt="">
+                        <div class="content">
+                            <h4>Chuyên gia tư vấn chi tiết nhất</h4>
+                            <p>Các tư vấn chuyên gia luôn sẵn sàng tư vấn tận tâm chi tiết tốt nhất</p>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-6 c-6">
+                        <img src="opt3.png" alt="">
+                        <div class="content">
+                            <h4>Các Khuyến Mại & Giá Luôn Tốt Nhất</h4>
+                            <p>Các deal & chương trình promotion được cập nhật mới nhất với giá tốt nhất cho bạn</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sale">
+            <h2>Các tour ưu đãi</h2>
+            <span>Khuyến mãi, giảm giá và ưu đãi đặc biệt dành riêng cho bạn</span>
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-3 m-6 c-6">
+                        <img src="sale1.png" alt="">
+                    </div>
+                    <div class="col l-3 m-6 c-6">
+                        <img src="sale2.png" alt="">
+                    </div>
+                    <div class="col l-3 m-6 c-6">
+                        <img src="sale3.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="love_trip">
+            <h2>Điểm đến yêu thích</h2>
+            <span>Tour du lịch Trong nước với OH!Travel. Hành hương đầu xuân - Tận hưởng bản sắc Việt</span>
+            <div class="grid wide">
+                <div class="row">
+                    <div class="l-3 m-6 c-6">
+                        <div class="image-container">
+                            <img src="lt1.png" alt="">
+                            <div class="text-overlay">
+                                <p class="name_local">Vịnh Hạ Long</p>
+                                <p class="reviews">834,548 lượt đánh giá</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="l-3 m-6 c-6">
+                        <div class="image-container">
+                            <img src="lt2.png" alt="">
+                            <div class="text-overlay">
+                                <p class="name_local">Bà Nà Hill</p>
+                                <p class="reviews">834,548 lượt đánh giá</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="l-3 m-6 c-6">
+                        <div class="image-container">
+                            <img src="lt3.png" alt="">
+                            <div class="text-overlay">
+                                <p class="name_local">Phố cổ Hội An</p>
+                                <p class="reviews">834,548 lượt đánh giá</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="l-3 m-6 c-6">
+                        <div class="image-container">
+                            <img src="lt4.png" alt="">
+                            <div class="text-overlay">
+                                <p class="name_local">Đảo Lý Sơn</p>
+                                <p class="reviews">834,548 lượt đánh giá</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="l-3 m-6 c-6">
+                        <div class="image-container">
+                            <img src="lt5.png" alt="">
+                            <div class="text-overlay">
+                                <p class="name_local">Bà Nà Hill</p>
+                                <p class="reviews">834,548 lượt đánh giá</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="l-3 m-6 c-6">
+                        <div class="image-container">
+                            <img src="lt6.png" alt="">
+                            <div class="text-overlay">
+                                <p class="name_local">Cù Lao Chàm</p>
+                                <p class="reviews">834,548 lượt đánh giá</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="l-3 m-6 c-6">
+                        <div class="image-container">
+                            <img src="lt7.png" alt="">
+                            <div class="text-overlay">
+                                <p class="name_local">Gành Đá Đĩa</p>
+                                <p class="reviews">834,548 lượt đánh giá</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="l-3 m-6 c-6">
+                        <div class="image-container">
+                            <img src="lt8.png" alt="">
+                            <div class="text-overlay">
+                                <p class="name_local">Côn Đảo</p>
+                                <p class="reviews">834,548 lượt đánh giá</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="p-3">
+            <div class="explore">
+                <h1>Khám phá
+                    <hr> vẻ đẹp
+                    <hr> Việt Nam
+                </h1>
+                <span>Cùng Triptrek khám phá vẻ đẹp Việt Nam</span>
+                <div class="btn">
+                    <button class="btn-1">Tư vấn ngay</button>
+                    <button class="btn-2">Đặt ngay</button>
+                </div>
+            </div>
+        </div>
+        <div class="p-4">
+            <div class="news">
+                <h2>Tin tức</h2>
+                <span>Tour du lịch Trong nước với OH!Travel. Hành hương đầu xuân - Tận hưởng bản sắc Việt</span>
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col l-3 m-6 c-6">
+                            <img src="lt4.png" alt="">
+                            <h3>Cắm trại ở Chư Nâm ngắm thiên đường mây ở độ cao</h3>
+                            <div class="admin">
+                                <div class="left">
+                                    <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                                    <p class="name">Admin</p>
+                                </div>
+                                <span class="time">27/11/2024</span>
+                            </div>
+                            <p class="text">
+                                Đỉnh Chư Nam Gia Lai là địa điểm dừng chân hấp dẫn thu hút những người đam mê trekking,
+                                khám phá thiên nhiên và cắm trại ở Chư Nâm chính là một trong những trải nghiệm đang rất
+                                được yêu....
+                            </p>
+                        </div>
+                        <div class="col l-3 m-6 c-6">
+                            <img src="lt5.png" alt="">
+                            <h3>Cắm trại ở Chư Nâm ngắm thiên đường mây ở độ cao</h3>
+                            <div class="admin">
+                                <div class="left">
+                                    <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                                    <p class="name">Admin</p>
+                                </div>
+                                <span class="time">27/11/2024</span>
+                            </div>
+                            <p class="text">
+                                Đỉnh Chư Nam Gia Lai là địa điểm dừng chân hấp dẫn thu hút những người đam mê trekking,
+                                khám phá thiên nhiên và cắm trại ở Chư Nâm chính là một trong những trải nghiệm đang rất
+                                được yêu....
+                            </p>
+                        </div>
+                        <div class="col l-3 m-6 c-6">
+                            <img src="lt3.png" alt="">
+                            <h3>Cắm trại ở Chư Nâm ngắm thiên đường mây ở độ cao</h3>
+                            <div class="admin">
+                                <div class="left">
+                                    <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                                    <p class="name">Admin</p>
+                                </div>
+                                <span class="time">27/11/2024</span>
+                            </div>
+                            <p class="text">
+                                Đỉnh Chư Nam Gia Lai là địa điểm dừng chân hấp dẫn thu hút những người đam mê trekking,
+                                khám phá thiên nhiên và cắm trại ở Chư Nâm chính là một trong những trải nghiệm đang rất
+                                được yêu....
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="p-5">
+            <img src="letter.png" alt="">
+            <h2>Đăng ký nhận bản tin của chúng tôi để nhận
+                <hr>
+                tất cả các thông tin cập nhật và tin tức về Triptrek.
+            </h2>
+            <div class="input-email">
+                <div class="email">
+                    <span>Nhập email dưới đây *</span>
+                    <input type="text">
+                </div>
+                <button>Đăng kí</button>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-container">
+              <div class="footer-logo">
+                <h1>TripTrek</h1>
+              </div>
+              <div class="footer-payment">
+                <p>Chấp nhận phương thức thanh toán</p>
+                <div class="payment-icons">
+                  <img src="visa.png" alt="Visa">
+                  <img src="mastercard.png" alt="MasterCard">
+                  <img src="jcb.png" alt="JCB">
+                  <img src="amex.png" alt="Amex">
+                  <img src="paypal.png" alt="PayPal">
+                </div>
+              </div>
+              <div class="footer-links">
+                <ul>
+                  <li><a href="#">Trang chủ</a></li>
+                  <li><a href="#">Địa điểm du lịch</a></li>
+                  <li><a href="#">Tin tức</a></li>
+                  <li><a href="#">Chính sách quyền riêng tư</a></li>
+                  <li><button class="book-btn">Đặt tour</button></li>
+                </ul>
+              </div>
+              <div class="footer-contact">
+                <p>support@triptrek.com</p>
+                <p>ĐT: 012 345 6789</p>
+                <p>120 Hoàng Minh Thảo,<br>Q. Liên Chiểu, TP. Đà Nẵng</p>
+              </div>
+            </div>
+            <hr>
+            <div class="footer-bottom">
+              <p>© 2024 bản quyền bởi TripTrek.</p>
+              <div class="social-icons">
+                <a href="#"><img src="facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="linkedin.png" alt="LinkedIn"></a>
+                <a href="#"><img src="youtube.png" alt="YouTube"></a>
+                <a href="#"><img src="tiktok.png" alt="TikTok"></a>
+              </div>
+            </div>
+        </footer>          
+        <script src="./home.js"></script>
+        
+  <!-- <script
+  src="https://app.preny.ai/bot-embed.js"
+  data-preny-bot-id="6750311811e047c9180c48bf"
+  async
+  defer
+/> -->
+    <script src="https://app.tudongchat.com/js/chatbox.js"></script>
+    <script>
+        const tudong_chatbox = new TuDongChat('Gmcy69TbPltvDjsOV7zcH')
+        tudong_chatbox.initial()
+    </script>
+
+</body>
+</html>
