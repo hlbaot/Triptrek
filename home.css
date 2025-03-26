@@ -135,7 +135,7 @@ body {
     width: 100%;
     height: 100vh;
     margin-top: 80px;
-    background: url('../TripTrek/Home/p-1.png');
+    background: url('./img/images.jpg');
     background-size: cover;
     position: relative;
     color: white;
