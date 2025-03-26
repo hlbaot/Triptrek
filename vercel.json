@@ -1,6 +1,8 @@
 {
-    "rewrites": [
-      { "source": "/(.*)", "destination": "../../TripTrek/Home/home.html" }
-    ]
-  }
-  
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/Home/home.html"
+    }
+  ]
+}
