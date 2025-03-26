@@ -166,7 +166,13 @@ body {
 .contact-form {
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: center;
+  padding: 20px; 
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .contact-form h2,
@@ -177,8 +183,8 @@ body {
 
 .contact-form form input,
 .contact-form form textarea {
-  width: 382px;
-  padding: 10px;
+  width: 100%;
+  padding: 12px; 
   margin-bottom: 15px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -187,14 +193,15 @@ body {
 }
 
 .contact-form form {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: center;
 }
 
 .contact-form form button {
-  width: 50%;
-  padding: 10px;
+  width: 100%; 
+  padding: 12px;
   background-color: #007bff;
   color: #fff;
   border: none;
